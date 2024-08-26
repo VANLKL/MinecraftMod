@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hat",
+	"version": "${version}",
+	"name": "Hat",
+	"description": "本模组提供一个指令 /hat ，来将手上的物品戴在头上。",
+	"authors": [
+		"VANLKL"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vanlkl.hat.Hat"
+		],
+		"client": [
+			"com.vanlkl.hat.HatClient"
+		],
+		"fabric-datagen": [
+			"com.vanlkl.hat.HatDataGenerator"
+		]
+	},
+	"mixins": [
+		"hat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
